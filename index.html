@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawhiida Fatima — Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F766E',
+                        secondary: '#0D9488',
+                        accent: '#F97316',
+                        dark: '#0F172A',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+            .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); }
+            .section-padding { padding-top: 4rem; padding-bottom: 4rem; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+<!--  NAVBAR -->
+<nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-3">
+            <a href="#" class="text-xl font-bold text-primary">Tawhiida<span class="text-accent">.dev</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+            <a href="mailto:tawhiida44@gmail.com" class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium">Hire Me</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="pt-32 pb-24 bg-gradient-to-br from-teal-50 via-white to-orange-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="md:flex md:items-center md:gap-12">
+            <div class="md:w-3/5 mb-8 md:mb-0">
+                <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-dark mb-4">
+                    Hi, I'm <span class="text-primary">Tawhiida Fatima</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl text-slate-600 mb-6">
+                    Final-Year Medical Student • Nakuru, Kenya 
+                </h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+                    Building practical digital tools for East African businesses — while completing my medical degree AND studying Computer Science at Harvard simultaneously. I bridge clinical science, technology, and clear communication.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <a href="#projects" class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg font-medium transition-colors">View My Work</a>
+                    <a href="#contact" class="border-2 border-primary text-primary hover:bg-primary/5 px-6 py-3 rounded-lg font-medium transition-colors">Get In Touch</a>
+                </div>
+                <div class="flex space-x-5 text-2xl">
+                    <a href="https://github.com/tawhiida44-debug" target="_blank" class="text-slate-600 hover:text-primary transition-colors"><i class="fa fa-github"></i></a>
+                    <a href="https://linkedin.com/in/tawhiida-fatima" target="_blank" class="text-slate-600 hover:text-primary transition-colors"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="mailto:tawhiida44@gmail.com" class="text-slate-600 hover:text-accent transition-colors"><i class="fa fa-envelope"></i></a>
+                    <a href="tel:+254706308117" class="text-slate-600 hover:text-accent transition-colors"><i class="fa fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="md:w-2/5">
+                <img src="images/profile.png" alt="Tawhiida Fatima" class="w-full rounded-2xl shadow-xl mb-6 object-cover">
+                <div class="bg-white p-6 rounded-2xl shadow-xl">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-primary"><i class="fa fa-stethoscope"></i></div>
+                            <span class="font-medium">MBChB — Final Year, Nakuru</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-700 font-bold">H</div>
+                            <span class="font-medium">Harvard CS50 — Computer Science</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa fa-code"></i></div>
+                            <span class="font-medium">Self-Taught Full-Stack Developer</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600"><i class="fa fa-globe"></i></div>
+                            <span class="font-medium">English • Swahili</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--  ABOUT SECTION -->
+<section id="about" class="section-padding">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-dark">About <span class="text-primary">Me</span></h2>
+        <div class="max-w-3xl mx-auto text-lg text-slate-700 leading-relaxed space-y-4">
+            <p>I am a <strong>final-year medical student based in Nakuru, Kenya</strong> — simultaneously pursuing my clinical degree AND studying <strong>Computer Science at Harvard University (CS50)</strong>. I am also a <strong>self-taught full-stack developer</strong> building practical, secure digital solutions for local small businesses.</p>
+            <p>My unique strength is combining <strong>deep clinical knowledge</strong> with <strong>technical software development skills</strong> — allowing me to work across medical content, health tech, and general application building. Everything I create is designed for <strong>our local reality</strong> — simple, bilingual, and built to work here.</p>
+            <p>Fluent native speaker of <strong>English , German, Arabic and Swahili</strong>. Available for part-time work around my study schedule — reliable, responsive, and fast.</p>
+        </div>
+    </div>
+</section>
+
+<!--  SKILLS SECTION -->
+<section id="skills" class="section-padding bg-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-dark">My <span class="text-primary">Skills</span></h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- MEDICAL -->
+            <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                <div class="w-14 h-14 rounded-full bg-teal-100 flex items-center justify-center text-primary text-2xl mb-4">
+                    <i class="fa fa-stethoscope"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-primary">Medical — Ongoing</h3>
+                <ul class="space-y-2 text-slate-700">
+                    <li>✓ Clinical Medicine & Anatomy</li>
+                    <li>✓ Ophthalmology & Internal Medicine</li>
+                    <li>✓ Exam-Focused Note Summarization</li>
+                    <li>✓ Medical Diagrams & Visuals</li>
+                    <li>✓ English  Swahili Translation</li>
+                </ul>
+            </div>
+
+            <!-- DEVELOPMENT -->
+            <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-2xl mb-4">
+                    <i class="fa fa-code"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-blue-600">Coding — Harvard + Self-Taught</h3>
+                <ul class="space-y-2 text-slate-700">
+                    <li>✓ Python & FastAPI — Self-Taught</li>
+                    <li>✓ SQL & SQLite — Harvard CS50</li>
+                    <li>✓ HTML5 / CSS3 / JavaScript</li>
+                    <li>✓ Git Version Control — Harvard CS50</li>
+                    <li>✓ APIs, Security & Bcrypt</li>
+                </ul>
+            </div>
+
+            <!--  DESIGN & CONTENT -->
+            <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                <div class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center text-accent text-2xl mb-4">
+                    <i class="fa fa-paint-brush"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-accent">Design & Content</h3>
+                <ul class="space-y-2 text-slate-700">
+                    <li>✓ Canva & Photopea Design</li>
+                    <li>✓ Educational Layout & Print</li>
+                    <li>✓ Research Paper Simplification</li>
+                    <li>✓ Technical Documentation</li>
+                    <li>✓ Mobile-First Web Design</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- EDUCATION & CERTIFICATIONS -->
+        <div class="mt-12 bg-white p-6 rounded-xl shadow-md">
+            <h3 class="text-xl font-bold mb-4 text-center text-dark">Education & Ongoing Studies</h3>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-primary">
+                    <span class="font-medium"> MBChB — Final Year</span>
+                    <p class="text-sm text-slate-500">Nakuru, Kenya — Ongoing</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-red-600">
+                    <span class="font-medium"> CS50 Computer Science</span>
+                    <p class="text-sm text-slate-500">Harvard University — In Progress</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-blue-500">
+                    <span class="font-medium"> Self-Taught Developer</span>
+                    <p class="text-sm text-slate-500">Building Real Projects — Proven</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-green-500">
+                    <span class="font-medium"> Responsive Web Design</span>
+                    <p class="text-sm text-slate-500">freeCodeCamp — Completed</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-orange-500">
+                    <span class="font-medium"> Canva Design Fundamentals</span>
+                    <p class="text-sm text-slate-500">Canva Design School — Completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section-padding">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-dark">Featured <span class="text-primary">Projects</span></h2>
+        
+        <div class="space-y-10">
+            <!-- PROJECT 1: RAYAN CAFE ERP -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover">
+                <div class="md:w-2/5 bg-gradient-to-br from-teal-500 to-teal-700 p-8 flex items-center justify-center text-white">
+                    <div class="text-center">
+                        <i class="fa fa-cutlery text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold">Rayan Cafe ERP</h3>
+                        <p>POS • Inventory • Profit Tracker</p>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-6">
+                    <h3 class="text-2xl font-bold mb-3 text-dark">Rayan Cafe ERP Management System</h3>
+                    <p class="text-slate-600 mb-4">Complete all-in-one restaurant management platform built for Nakuru-based Rayan Cafe. Replaces manual record-keeping with real-time sales, stock, and profit tracking — built entirely from scratch.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-teal-100 text-primary px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">FastAPI</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">SQLite</span>
+                        <span class="bg-orange-100 text-accent px-3 py-1 rounded-full text-sm">HTML/CSS/JS</span>
+                        <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">Swahili Toggle</span>
+                    </div>
+                    <ul class="space-y-1 text-slate-700 mb-4">
+                        <li>✓ Secure login with role-based access</li>
+                        <li>✓ Stock auto-deduction from sales</li>
+                        <li>✓ Swahili/English interface</li>
+                        <li>✓ WhatsApp reporting integration</li>
+                    </ul>
+                    <p class="text-primary font-medium">View full code on GitHub</p>
+                </div>
+            </div>
+
+            <!-- PROJECT 2: BLESSED HANDS BOUTIQUE WEBSITE -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover">
+                <div class="md:w-2/5 bg-gradient-to-br from-rose-500 to-pink-600 p-8 flex items-center justify-center text-white">
+                    <div class="text-center">
+                        <i class="fa fa-shopping-bag text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold">Blessed Hands</h3>
+                        <p>Boutique Website — Completed</p>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-6">
+                    <h3 class="text-2xl font-bold mb-3 text-dark">Blessed Hands Boutique — Full Website</h3>
+                    <p class="text-slate-600 mb-4">Fully functional, mobile-friendly e-commerce showcase site built for a local clothing boutique. Complete product display, category organisation, WhatsApp ordering integration, and contact/location tools — fully designed and developed from concept to completion.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-100 text-accent px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                        <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Mobile-First</span>
+                        <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">WhatsApp Integration</span>
+                        <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">Complete Project</span>
+                    </div>
+                    <ul class="space-y-1 text-slate-700 mb-4">
+                        <li>✓ Product gallery with categories</li>
+                        <li>✓ One-click WhatsApp ordering</li>
+                        <li>✓ Contact page & location map</li>
+                        <li>✓ Fully completed & delivered</li>
+                    </ul>
+                    <p class="text-rose-600 font-medium">Live project — completed work</p>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: MEDICAL STUDY RESOURCES -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover">
+                <div class="md:w-2/5 bg-gradient-to-br from-indigo-500 to-blue-600 p-8 flex items-center justify-center text-white">
+                    <div class="text-center">
+                        <i class="fa fa-book text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold">Med Study Kits</h3>
+                        <p>Visual Exam Guides — Ongoing</p>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-6">
+                    <h3 class="text-2xl font-bold mb-3 text-dark">Ophthalmology & Clinical Study Resources</h3>
+                    <p class="text-slate-600 mb-4">Transforming dense university lecture notes into beautiful, exam-ready study materials — complete with colour-coded sections, diagrams, memory tricks, quick quizzes, and one-page cheat sheets designed specifically for printing and revision.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Anatomy</span>
+                        <span class="bg-teal-100 text-primary px-3 py-1 rounded-full text-sm">Ophthalmology</span>
+                        <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm">Visual Design</span>
+                        <span class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-sm">Print-Ready</span>
+                    </div>
+                    <ul class="space-y-1 text-slate-700 mb-4">
+                        <li>✓ Raw lecture notes → polished visual guides</li>
+                        <li>✓ Colour-coded sections + clear diagrams</li>
+                        <li>✓ Exam-focused summaries & mnemonics</li>
+                        <li>✓ English  Swahili terminology</li>
+                    </ul>
+                    <p class="text-indigo-600 font-medium">Created by a medical student — for students</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section-padding bg-dark text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-6">Let's Work <span class="text-accent">Together</span></h2>
+        <p class="text-lg text-slate-300 mb-10 max-w-2xl mx-auto">I am available for freelance medical content, translation, web development, and design projects. Part-time, flexible, reliable — built for East African time.</p>
+        
+        <div class="grid sm:grid-cols-3 gap-6 mb-10">
+            <a href="mailto:tawhiida44@gmail.com" class="bg-white/10 hover:bg-white/20 p-6 rounded-xl transition-colors">
+                <i class="fa fa-envelope text-3xl text-accent mb-3"></i>
+                <p class="font-medium">Email Me</p>
+                <p class="text-sm text-slate-400">tawhiida44@gmail.com</p>
+            </a>
+            <a href="tel:+254706308117" class="bg-white/10 hover:bg-white/20 p-6 rounded-xl transition-colors">
+                <i class="fa fa-phone text-3xl text-accent mb-3"></i>
+                <p class="font-medium">Call / SMS</p>
+                <p class="text-sm text-slate-400">+254 706 308 117</p>
+            </a>
+            <a href="https://github.com/tawhiida44-debug" target="_blank" class="bg-white/10 hover:bg-white/20 p-6 rounded-xl transition-colors">
+                <i class="fa fa-code-fork text-3xl text-accent mb-3"></i>
+                <p class="font-medium">GitHub</p>
+                <p class="text-sm text-slate-400">See My Code Work</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+ <!-- FOOTER -->
+<footer class="bg-black text-slate-400 py-6 text-center text-sm">
+    <p>© 2026 Tawhiida Fatima Hemedi — Medical Student • Self-Taught Developer • Content Creator</p>
+    <p class="mt-1">Studying in Nakuru • Building with Harvard CS50 • Created with 💚 in Kenya</p>
+</footer>
+
+<!--  SMOOTH SCROLL SCRIPT -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+});
+</script>
+
+</body>
+</html>
