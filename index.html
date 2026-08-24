@@ -202,40 +202,119 @@
     <h2 style="color:var(--accent‑light);font‑size:1.6rem;margin:3rem 0 1.2rem;border‑bottom:1px solid var(--border);padding‑bottom:.5rem;">💻 Projects & Work</h2>
 
     <!-- EXISTING LIVE PROJECTS —  -->
-    <div class="grid">
-        <div class="card">
-            <h3>School & Business Websites</h3>
-            <p>Responsive multi‑page sites for schools, boutiques, cafes & multi‑service businesses across Kenya, Uganda & Saudi Arabia — clean design, local payment/WhatsApp integration, fully editable.</p>
-            <span class="tag">HTML/CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Responsive</span>
-        </div>
+    
+<div class="grid gap-8">
 
-        <div class="card">
-            <h3> Creative Generative Art</h3>
-            <p>Parametric heart animation & mathematical art — Python Turtle, geometric patterns & colour algorithms.</p>
-            <span class="tag">Python</span>
-            <span class="tag">Math</span>
-            <span class="tag">Creative</span>
-        </div>
-
-        <div class="card">
-            <h3> Med‑Drugs — Pharmacology Reference Tool</h3>
-            <p>Exam‑ready drug guide built for medical students: instant search, drug profiles, mechanism/dose/side‑effects & “Exam favourites” summaries — pure frontend, fully offline‑ready.</p>
-            <span class="tag">HTML/CSS/JS</span>
-            <span class="tag">JSON Data</span>
-            <span class="tag">UI/UX</span>
-        </div>
-
-        <div class="card">
-            <h3>Medical Student Study Planner</h3>
-            <p>Organise subjects, topics, progress & exam dates — pre‑filled medical curriculum structure, status tracking, local storage saves progress instantly.</p>
-            <span class="tag">Interactive</span>
-            <span class="tag">LocalStorage</span>
-            <span class="tag">Planning</span>
-        </div>
+  <!-- 1. SCHOOL & BUSINESS WEBSITES - Amber/Orange (Business) -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover">
+    <div class="md:w-2/5 bg-gradient-to-br from-amber-500 to-orange-600 p-8 flex items-center justify-center">
+      <div class="text-center text-white">
+        <i class="fa fa-briefcase text-5xl mb-4"></i>
+        <h3 class="text-2xl font-bold">Business Sites</h3>
+        <p class="opacity-90 text-sm mt-1">Live projects - Completed</p>
+      </div>
     </div>
-      <!-- PROJECT : BLESSED HANDS BOUTIQUE WEBSITE -->
+    <div class="md:w-3/5 p-6">
+      <h3 class="text-xl font-bold mb-3 text-dark">School & Business Websites</h3>
+      <p class="text-slate-600 mb-4">Responsive multi-page sites for schools, boutiques, cafes & multi-service businesses across Kenya, Uganda.</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+        <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm">Responsive</span>
+      </div>
+      <ul class="space-y-1 text-slate-700 mb-4 text-sm">
+        <li><i class="fa fa-check text-orange-500 mr-2"></i> 10+ businesses live</li>
+        <li><i class="fa fa-check text-orange-500 mr-2"></i> Mobile-first & WhatsApp integrated</li>
+      </ul>
+      <p class="text-orange-600 font-medium text-sm">Live projects - completed work</p>
+    </div>
+  </div>
+
+  <!-- 2. CREATIVE GENERATIVE ART - Dark Tech / Cyan  -->
+  <div class="bg-slate-900 rounded-xl shadow-lg overflow-hidden md:flex card-hover border border-slate-800">
+    <div class="md:w-2/5 bg-gradient-to-br from-cyan-500 to-blue-700 p-8 flex items-center justify-center">
+      <div class="text-center text-white">
+        <i class="fa fa-heart text-5xl mb-4 animate-pulse"></i>
+        <h3 class="text-2xl font-bold">Feisal Heart</h3>
+        <p class="opacity-90 text-sm mt-1">Python Turtle - Live</p>
+      </div>
+    </div>
+    <div class="md:w-3/5 p-6">
+      <h3 class="text-xl font-bold mb-3 text-white">Creative Generative Art</h3>
+      <p class="text-slate-400 mb-4">Parametric heart animation & mathematical art - Python Turtle, geometric patterns & colour algorithms.</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-cyan-950 text-cyan-400 border border-cyan-800 px-3 py-1 rounded-full text-sm">Python</span>
+        <span class="bg-blue-950 text-blue-400 border border-blue-800 px-3 py-1 rounded-full text-sm">Math</span>
+        <span class="bg-violet-950 text-violet-400 border border-violet-800 px-3 py-1 rounded-full text-sm">Creative</span>
+      </div>
+      <ul class="space-y-1 text-slate-300 mb-4 text-sm">
+        <li><i class="fa fa-check text-cyan-400 mr-2"></i> 120+ color algorithms</li>
+        <li><i class="fa fa-check text-cyan-400 mr-2"></i> Trinket live demo</li>
+      </ul>
+      <p class="text-cyan-400 font-medium text-sm">https://trinket.io/python/d47b4e594977</p>
+    </div>
+  </div>
+
+  <!-- 3. MED-DRUGS - Emerald Green (Medical) -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover">
+    <div class="md:w-2/5 bg-gradient-to-br from-emerald-500 to-teal-700 p-8 flex items-center justify-center">
+      <div class="text-center text-white">
+        <i class="fa fa-medkit text-5xl mb-4"></i>
+        <h3 class="text-2xl font-bold">Med-Drugs</h3>
+        <p class="opacity-90 text-sm mt-1">Pharma Reference - Completed</p>
+      </div>
+    </div>
+    <div class="md:w-3/5 p-6">
+      <h3 class="text-xl font-bold mb-3 text-dark">Med-Drugs - Pharmacology Reference Tool</h3>
+      <p class="text-slate-600 mb-4">Exam-ready drug guide built for medical students: instant search, drug profiles, mechanism/dose/side-effects.</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm">HTML/CSS/JS</span>
+        <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm">JSON Data</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm">UI/UX</span>
+      </div>
+      <ul class="space-y-1 text-slate-700 mb-4 text-sm">
+        <li><i class="fa fa-check text-emerald-500 mr-2"></i> 200+ drugs with search</li>
+        <li><i class="fa fa-check text-emerald-500 mr-2"></i> Mechanism, dose, side-effects</li>
+        <li><i class="fa fa-check text-emerald-500 mr-2"></i> Exam-ready quick revision</li>
+      </ul>
+      <p class="text-emerald-600 font-medium text-sm">Live project - completed work</p>
+    </div>
+  </div>
+
+</div>
+
+        <!-- PROJECT 4 : MEDICAL STUDENT STUDY PLANNER -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover">
+  <!-- Left side - colored banner (same spacing as Blessed Hands) -->
+  <div class="md:w-2/5 bg-gradient-to-br from-blue-600 to-indigo-700 p-8 flex items-center justify-center">
+    <div class="text-center text-white">
+      <i class="fa fa-graduation-cap text-5xl mb-4"></i>
+      <h3 class="text-2xl font-bold">Med-Planner</h3>
+      <p class="opacity-90 text-sm mt-1">Study Planner - Completed</p>
+    </div>
+  </div>
+
+  <!-- Right side - content (same p-6, mb-4, gap-2, space-y-1 as Blessed Hands) -->
+  <div class="md:w-3/5 p-6">
+    <h3 class="text-xl font-bold mb-3 text-dark">Medical Student Study Planner</h3>
+    <p class="text-slate-600 mb-4">Organise subjects, topics, progress & exam dates - pre-filled medical curriculum.</p>
+    
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+      <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">LocalStorage</span>
+      <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Planning</span>
+    </div>
+
+    <ul class="space-y-1 text-slate-700 mb-4 text-sm">
+      <li><i class="fa fa-check text-blue-500 mr-2"></i> Pre-filled MBChB curriculum</li>
+      <li><i class="fa fa-check text-blue-500 mr-2"></i> Progress tracking & exam countdown</li>
+      <li><i class="fa fa-check text-blue-500 mr-2"></i> Local storage - works offline</li>
+    </ul>
+
+    <p class="text-blue-600 font-medium text-sm">Live project - completed work</p>
+  </div>
+</div>
+      <!-- PROJECT 5 : BLESSED HANDS BOUTIQUE WEBSITE -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover">
                 <div class="md:w-2/5 bg-gradient-to-br from-rose-500 to-pink-600 p-8 flex items-center justify-center text-white">
                     <div class="text-center">
@@ -263,7 +342,7 @@
                 </div>
             </div>
 
-            <!-- PROJECT : MEDICAL STUDY RESOURCES -->
+            <!-- PROJECT 6 : MEDICAL STUDY RESOURCES -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover">
                 <div class="md:w-2/5 bg-gradient-to-br from-indigo-500 to-blue-600 p-8 flex items-center justify-center text-white">
                     <div class="text-center">
@@ -291,104 +370,154 @@
                 </div>
             </div>
 
-    <!-- ongoing projects-->
-    <h2 style="color:var(--gold);font‑size:1.4rem;margin:3rem 0 1rem;">🚧 In‑Progress & Planned: Full‑Stack Builds</h2>
-    <p style="color:var(--muted);margin‑bottom:1.5rem;">Growing progressively — one solid foundation, adding features week‑by‑week instead of separate throw‑away demos</p>
-    
-    <div class="grid">
-        <!-- #1 URL Shortener — TOP PICK -->
-        <div class="card">
-            <span class="badge">Recommended Start</span>
-            <h3>🔗 URL Shortener</h3>
-            <p>Like Bitly — create short clean links, instant redirects, click‑count tracking & simple dashboard.</p>
-            <p style="color:var(--muted);font‑size:.9rem;margin‑top:.5rem;"> Skills shown: RESTful API design, database relationships, routing, analytics & deployment</p>
-            <span class="tag">Backend APIs</span>
-            <span class="tag">Database</span>
-            <span class="tag">Analytics</span>
-        </div>
+    <!-- ongoing projects - SPACED VERSION -->
+<h2 style="color:var(--accent);font-size:1.4rem;margin:3rem 0 1.5rem;">In-Progress & Planned: Full-Stack Builder/Map</h2>
+<p style="margin-bottom:1.5rem;opacity:.8">Showing progressively - one solid foundation, adding features</p>
 
-        <!-- #2 Issue Tracker -->
-        <div class="card">
-            <span class="badge"> Great Alternative</span>
-            <h3> Issue / Bug Tracker</h3>
-            <p>Create & assign tasks, update status/priority levels, add comments & collaborate securely.</p>
-            <p style="color:var(--muted);font‑size:.9rem;margin‑top:.5rem;"> Skills shown: Full CRUD operations, user roles/permissions, authentication & relationships</p>
-            <span class="tag">Auth</span>
-            <span class="tag">CRUD</span>
-            <span class="tag">Relations</span>
-        </div>
+<div class="grid gap-8">
 
-        <!-- #3 Real‑Time Chat -->
-        <div class="card">
-            <span class="badge"> Advanced Pick</span>
-            <h3>Real‑Time Chat App</h3>
-            <p>Secure login, send/receive instantly, online/offline status updates & persistent conversation history.</p>
-            <p style="color:var(--muted);font‑size:.9rem;margin‑top:.5rem;">📚 Skills shown: Authentication, WebSockets, real‑time comms & live state</p>
-            <span class="tag">WebSockets</span>
-            <span class="tag">Auth</span>
-            <span class="tag">Real‑Time</span>
-        </div>
-
-        <!-- #4 AI Summarizer -->
-        <div class="card">
-            <h3> AI Document Summarizer</h3>
-            <p>Upload PDFs or notes → backend processes & generates clear concise summaries — save & review later.</p>
-            <p style="color:var(--muted);font‑size:.9rem;margin‑top:.5rem;">Skills shown: File uploads/parsing, external API integration, database storage & async jobs</p>
-            <span class="tag">AI APIs</span>
-            <span class="tag">Files</span>
-            <span class="tag">Processing</span>
-        </div>
-
-        <!-- #5 Expense Tracker -->
-        <div class="card">
-            <h3>Expense & Budget Tracker</h3>
-            <p>Log income/expenses, organise categories, monthly charts & personal dashboard — private per‑user.</p>
-            <p style="color:var(--muted);font‑size:.9rem;margin‑top:.5rem;">📚 Skills shown: Data modelling, calculations, charts/visualisation & secure accounts</p>
-            <span class="tag">Dashboards</span>
-            <span class="tag">Charts</span>
-            <span class="tag">Auth</span>
-        </div>
-
-        <!-- #6 Mini Shop -->
-        <div class="card">
-            <h3> Mini E‑Commerce</h3>
-            <p>Curated small store: browse 10+ items, add to cart, view totals & checkout flow — simple admin management.</p>
-            <p style="color:var(--muted);font‑size:.9rem;margin‑top:.5rem;">📚 Skills shown: Product database, cart logic, state management & admin controls</p>
-            <span class="tag">State</span>
-            <span class="tag">Inventory</span>
-            <span class="tag">Admin</span>
-        </div>
-
-        <!-- #7 Study Planner Evolution -->
-        <div class="card">
-            <span class="badge"> YOUR PERFECT FIT</span>
-            <h3> Study Planner — Full‑Stack Version</h3>
-            <p>Upgrade existing planner: cloud save, shared study‑groups, spaced repetition reminders & exam‑ready templates.</p>
-            <p style="color:var(--muted);font‑size:.9rem;margin‑top:.5rem;">Skills shown: Full‑stack evolution, user accounts, sync & SaaS potential</p>
-            <span class="tag">Growth</span>
-            <span class="tag">SaaS</span>
-            <span class="tag">Custom</span>
-        </div>
+  <!-- #1 URL Shortener - TOP PICK -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover border-2 border-amber-200">
+    <div class="md:w-2/5 bg-gradient-to-br from-slate-800 to-slate-900 p-8 flex items-center justify-center relative">
+      <span class="absolute top-3 left-3 bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">#1 TOP PICK</span>
+      <div class="text-center text-white mt-4">
+        <i class="fa fa-link text-5xl mb-4 text-amber-400"></i>
+        <h3 class="text-2xl font-bold">URL Shortener</h3>
+        <span class="inline-block mt-2 bg-amber-500 text-white text-xs px-3 py-1 rounded-full">Recommended Start</span>
+      </div>
     </div>
+    <div class="md:w-3/5 p-6">
+      <h3 class="text-xl font-bold mb-3">URL Shortener</h3>
+      <p class="text-slate-600 mb-4">Like Bitly - create short clean links, instant redirects, click-count tracking & simple dashboard.</p>
+      
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-slate-800 text-white px-3 py-1 rounded-full text-sm">NodeJS</span>
+        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Database</span>
+        <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">REST API</span>
+        <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">Analytics</span>
+      </div>
 
-    <!--  SMART STRATEGY — exactly your advice written clearly! -->
-    <div style="background:var(--surface);border:1px solid var(--border);border‑radius:16px;padding:1.8rem;margin‑top:3rem;">
-        <h3 style="color:var(--accent‑light);margin‑bottom:1rem;"> My Build Strategy — Progress Over Perfection</h3>
-        <p style="margin‑bottom:1rem;">Instead of building many unrelated half‑finished demos — I grow one solid project step‑by‑step so it becomes genuinely powerful & impressive:</p>
-        <ul style="margin‑left:1.2rem;line‑height:1.8rem;color:var(--text);">
-            <li><strong>Day 1:</strong> Authentication + Sign‑up / Login + Basic Data CRUD</li>
-            <li><strong>Day 2:</strong> Database design, relationships & full dashboard views</li>
-            <li><strong>Day 3:</strong> RESTful API creation, server‑side validation & error handling</li>
-            <li><strong>Day 4:</strong> Advanced feature — real‑time updates, AI integration or file handling</li>
-            <li><strong>Day 5:</strong> Testing, responsive polish, live deployment & proper documentation</li>
-        </ul>
-        <p style="margin‑top:1.2rem;color:var(--gold);">Result: One complete production‑ready system employers actually recognise & trust — not ten separate “hello world” examples!</p>
+      <p class="text-sm text-slate-500 mb-2"><span class="font-semibold text-slate-700">Skills shown:</span> RESTful API design, database relations, authentication, analytics</p>
+      <p class="text-amber-600 font-medium text-sm mt-3"><i class="fa fa-star mr-1"></i> Next build - foundation for all others</p>
     </div>
+  </div>
+
+  <!-- #2 Issue Tracker - Great Alternative -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex card-hover">
+    <div class="md:w-2/5 bg-gradient-to-br from-violet-600 to-indigo-700 p-8 flex items-center justify-center relative">
+      <span class="absolute top-3 left-3 bg-white text-violet-700 text-xs font-bold px-3 py-1 rounded-full">#2 Alternative</span>
+      <div class="text-center text-white mt-4">
+        <i class="fa fa-bug text-5xl mb-4"></i>
+        <h3 class="text-2xl font-bold">Issue Tracker</h3>
+        <span class="inline-block mt-2 bg-white/20 text-white text-xs px-3 py-1 rounded-full border border-white/30">Great Alternative</span>
+      </div>
+    </div>
+    <div class="md:w-3/5 p-6">
+      <h3 class="text-xl font-bold mb-3">Issue / Bug Tracker</h3>
+      <p class="text-slate-600 mb-4">Create & assign tasks, update status/priority levels, add comments & collaborate securely.</p>
+      
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-violet-100 text-violet-700 px-3 py-1 rounded-full text-sm">Auth</span>
+        <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">CRUD</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm">Roles</span>
+      </div>
+
+      <p class="text-sm text-slate-500"><span class="font-semibold text-slate-700">Skills shown:</span> Full CRUD operations, user roles, secure collaboration</p>
+    </div>
+  </div>
+
+</div>
+
+        <!-- #3 to #7 - ALL IN-PROGRESS STAGE - dashed, different from LIVE -->
+
+<div class="grid gap-6 mt-6">
+
+  <!-- #3 Real-Time Chat - Advanced Picks -->
+  <div class="bg-slate-50 rounded-xl border border-dashed border-slate-300 p-6">
+    <div class="flex justify-between items-start mb-3">
+      <span class="bg-blue-100 text-blue-800 border border-blue-200 px-3 py-1 rounded-full text-xs font-bold">#3 Advanced Picks</span>
+      <span class="text-xs text-slate-400">Real-Time Chat</span>
+    </div>
+    <h3 class="font-bold mb-2">Real-Time Chat App</h3>
+    <p class="text-sm text-slate-600 mb-3">Secure login, send/receive instantly, online/offline status updates & persistent conversations.</p>
+    <div class="w-full bg-slate-200 rounded-full h-1.5 mb-3"><div class="bg-blue-500 h-1.5 rounded-full" style="width:10%"></div></div>
+    <div class="flex gap-2 flex-wrap">
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">Socket.io</span>
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">NodeJS</span>
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">Real-Time</span>
+    </div>
+    <p class="text-xs text-slate-500 mt-2">Skills: Authentication, websockets</p>
+  </div>
+
+  <!-- #4 AI Summarizer -->
+  <div class="bg-slate-50 rounded-xl border border-dashed border-slate-300 p-6">
+    <div class="flex justify-between items-start mb-3">
+      <span class="bg-purple-100 text-purple-800 border border-purple-200 px-3 py-1 rounded-full text-xs font-bold">#4 AI Summarizer</span>
+    </div>
+    <h3 class="font-bold mb-2">AI Document Summarizer</h3>
+    <p class="text-sm text-slate-600 mb-3">Upload PDFs or notes - backend processes & generates clear concise summaries - save & review later.</p>
+    <div class="w-full bg-slate-200 rounded-full h-1.5 mb-3"><div class="bg-purple-500 h-1.5 rounded-full" style="width:0%"></div></div>
+    <div class="flex gap-2 flex-wrap">
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">ML APIs</span>
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">File</span>
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">Processing</span>
+    </div>
+  </div>
+
+  <!-- #5 Expense Tracker -->
+  <div class="bg-slate-50 rounded-xl border border-dashed border-slate-300 p-6">
+    <span class="bg-emerald-100 text-emerald-800 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold mb-3 inline-block">#5 Expense & Budget Tracker</span>
+    <h3 class="font-bold mb-2">Expense Tracker</h3>
+    <p class="text-sm text-slate-600 mb-3">Log income/expenses, organise categories, monthly charts & personal dashboard.</p>
+    <div class="flex gap-2 flex-wrap">
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">Dashboard</span>
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">Charts</span>
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">Auth</span>
+    </div>
+  </div>
+
+  <!-- #6 Mini Shop -->
+  <div class="bg-slate-50 rounded-xl border border-dashed border-slate-300 p-6">
+    <span class="bg-orange-100 text-orange-800 border border-orange-200 px-3 py-1 rounded-full text-xs font-bold mb-3 inline-block">#6 Mini Shop</span>
+    <h3 class="font-bold mb-2">Mini E-Commerce</h3>
+    <p class="text-sm text-slate-600 mb-3">Curated small store: browse 10+ items, add to cart, view totals & checkout flow - simple and clean.</p>
+    <div class="flex gap-2 flex-wrap">
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">State</span>
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">Inventory</span>
+      <span class="bg-white border px-2 py-1 rounded-full text-xs">Admin</span>
+    </div>
+  </div>
+
+  <!-- #7 Study Planner Evolution - YOUR PERFECT FIT - Highlight this one -->
+  <div class="bg-white rounded-xl border-2 border-solid border-violet-400 shadow-md p-6 relative">
+    <span class="absolute -top-3 left-4 bg-violet-600 text-white px-3 py-1 rounded-full text-xs font-bold">#7 YOUR PERFECT FIT</span>
+    <h3 class="font-bold mb-2 mt-2">Study Planner - Full-Stack Version</h3>
+    <p class="text-sm text-slate-600 mb-3">Upgrade existing planner: cloud save, shared study groups, spaced repetition reminders & analytics.</p>
+    <div class="flex gap-2 flex-wrap mb-3">
+      <span class="bg-violet-100 text-violet-700 px-2 py-1 rounded-full text-xs">Growth</span>
+      <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs">SaaS</span>
+      <span class="bg-slate-100 px-2 py-1 rounded-full text-xs">Custom</span>
+    </div>
+    <p class="text-xs text-violet-700 font-medium">This one builds on your existing planner - perfect evolution</p>
+  </div>
+
+</div>
+
+<!-- SMART STRATEGY BOX - keep as is but spaced -->
+<div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.2rem;margin-top:2rem;">
+  <h3 style="color:var(--accent-light);margin-bottom:1rem;">My Build Strategy - Progress Over Perfection</h3>
+  <p style="margin-bottom:1rem;">Instead of building many unrelated half-finished demos - I grow one solid foundation:</p>
+  <ul style="margin-left:1.2rem;line-height:1.8;color:var(--text);">
+    <li><strong>Day 1:</strong> Authentication + Sign-up / Login + Basic Data CRUD</li>
+    <li><strong>Day 2:</strong> Database design, relationships & full dashboard views</li>
+    <li><strong>Day 3:</strong> RESTful API creation, server-side validation & error handling</li>
+    <li><strong>Day 4:</strong> Advanced feature - real-time updates, AI integration or file handling</li>
+    <li><strong>Day 5:</strong> Testing, responsive polish, live deployment & proper documentation</li>
+  </ul>
+</div>
 
 </section>
             
-
-          
 
 <!-- CONTACT SECTION -->
 <section id="contact" class="section-padding bg-dark text-white">
